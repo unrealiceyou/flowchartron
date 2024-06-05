@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "flowchartron"
+description = "Generate flowcharts according to GOST hopefully with a few button clicks."
+requires-python = ">= 3.12"
+version = "0.1a1"
+dependencies = [
+	"bs4",
+	"selenium",
+	"PyQt5",
+	"requests",
+]
+authors = [
+	{name = "Zuev Alexander", email = "iceyou@e.email"}
+]
+maintainers = [
+	{name = "Zuev Alexander", email = "iceyou@e.email"}
+]
+readme = {file = "README.md", content-type = "text/markdown"}
+classifiers = [
+	"Development Status :: 3 - Alpha",
+	"Intended Audience :: Developers",
+	"Topic :: Software Development :: Code Generators",
+	"License :: OSI Approved :: MIT License",
+	"Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+flowchartron = "flowchartron.main:main"
+
+
