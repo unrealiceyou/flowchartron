@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "flowchartron"
 description = "Generate flowcharts according to GOST hopefully with a few button clicks."
-requires-python = ">= 3.12"
+requires-python = ">= 3.10"
 version = "0.1a1"
 dependencies = [
 	"bs4",
